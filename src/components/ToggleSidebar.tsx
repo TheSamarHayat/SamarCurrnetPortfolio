@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { Badge } from "./Badge";
 
@@ -10,11 +10,21 @@ import { SidebarHeader } from "./SidebarHeader";
 import { Navigation } from "./Navigation";
 
 export const ToggleSidebar = () => {
-  const [open, setOpen] = useState(isMobile() ? false : true);
+  // Default to true (open) for desktop, will be adjusted on mount for mobile
+  const [open, setOpen] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    // Set initial state based on screen size after mount
+    if (isMobile()) {
+      setOpen(false);
+    }
+  }, []);
 
   return (
     <>
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {open && (
           <motion.div
             initial={{ x: -200 }}

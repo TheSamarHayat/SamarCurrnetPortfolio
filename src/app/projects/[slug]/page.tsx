@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug;
+  const { slug } = await params;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
   if (product) {
     return {
@@ -23,17 +23,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Projects | Samar Hayat",
       description:
-        "Samar Hayat is a Frontend Developer with 1+ year of experience. Explore his projects showcasing high-performance web applications built with React.js, Next.js, and JavaScript.",
+        "Samar Hayat is a Frontend Developer with over 1 year of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Explore his projects showcasing high-performance web applications built with React.js, Next.js, TypeScript, and JavaScript.",
     };
   }
 }
 
-export default function SingleProjectPage({
+export default async function SingleProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const slug = params.slug;
+  const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {

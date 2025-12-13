@@ -1,16 +1,9 @@
 import { Paragraph } from "@/components/Paragraph";
 import { Highlight } from "./Highlight";
 import ImageGrid from "./ImageGrid";
-import MeOne from "public/images/me/MeOne.png";
-import MeTwo from "public/images/me/MeTwo.png";
-import MeThree from "public/images/me/MeThree.png";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "About Samar Hayat - Frontend Developer",
-  description:
-    "Learn about Samar Hayat, a Frontend Developer specializing in Next.js, React, and modern web technologies.",
-};
+import MeOne from "@/../public/images/me/MeOne.png";
+import MeTwo from "@/../public/images/me/MeTwo.png";
+import MeThree from "@/../public/images/me/MeThree.png";
 
 export default function About() {
   const images = [MeOne.src, MeTwo.src, MeThree.src];
@@ -30,22 +23,32 @@ export default function About() {
           experiences.
         </Paragraph>
         <Paragraph className="mt-4">
-          With experience at companies like <Highlight>Xecutors</Highlight> and{" "}
-          <Highlight>Zitsol</Highlight>, I&apos;ve worked with technologies
-          including <Highlight>JavaScript (ES6+)</Highlight>,{" "}
-          <Highlight>Tailwind CSS</Highlight>, <Highlight>ShadCN</Highlight>,
-          and <Highlight>GraphQL</Highlight>. I&apos;m skilled at integrating
-          APIs from platforms like LinkedIn, Meta, and TikTok to create dynamic
-          web applications.
+          With over 1 year of professional experience, currently working at{" "}
+          <Highlight>GlobeWyze Inc.</Highlight> and previously at{" "}
+          <Highlight>Xecutors</Highlight> and <Highlight>Zitsol</Highlight>, I&apos;ve
+          worked extensively with cutting-edge technologies, including{" "}
+          <Highlight>JavaScript (ES6+)</Highlight>, <Highlight>TypeScript</Highlight>,{" "}
+          <Highlight>React.js</Highlight>, <Highlight>Next.js</Highlight>,{" "}
+          <Highlight>Tailwind CSS</Highlight>, <Highlight>ShadCN</Highlight>,{" "}
+          <Highlight>MUI</Highlight>, and <Highlight>GraphQL</Highlight>. I&apos;m
+          skilled at integrating APIs from platforms like LinkedIn, Meta, and TikTok to
+          create dynamic, scalable web applications.
         </Paragraph>
         <Paragraph className="mt-4">
-          At Xecutors, I built and improved websites using{" "}
-          <Highlight>Next.js</Highlight>
-          and <Highlight>React</Highlight>, working with tools like{" "}
-          <Highlight>Nhost</Highlight>, <Highlight>Hasura</Highlight>, and{" "}
-          <Highlight>Apollo Client</Highlight> to handle data efficiently. My
-          work focused on performance optimization, SEO improvements, and
-          seamless collaboration with design teams.
+          Currently at <Highlight>GlobeWyze Inc.</Highlight>, I develop and maintain
+          responsive web applications using <Highlight>React.js</Highlight> and{" "}
+          <Highlight>Next.js</Highlight>, implementing pixel-perfect UI components based
+          on Figma designs. I integrate <Highlight>GraphQL</Highlight> APIs for seamless
+          data management and optimize component performance for enhanced user
+          experience.
+        </Paragraph>
+        <Paragraph className="mt-4">
+          At <Highlight>Xecutors</Highlight>, I built and improved websites using{" "}
+          <Highlight>Next.js</Highlight> and <Highlight>React</Highlight>, working with
+          tools like <Highlight>Nhost</Highlight>, <Highlight>Hasura</Highlight>, and{" "}
+          <Highlight>Apollo Client</Highlight> to handle data efficiently. My work
+          focused on performance optimization, SEO improvements, and seamless
+          collaboration with design teams.
         </Paragraph>
         <Paragraph className="mt-4">
           Earlier at Zitsol, I developed <Highlight>WordPress</Highlight>{" "}

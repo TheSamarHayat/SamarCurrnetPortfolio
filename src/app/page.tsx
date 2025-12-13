@@ -26,9 +26,11 @@ export default function Home() {
         <Highlight>REST</Highlight>.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        With experience at <Highlight>Xecutors</Highlight> and{" "}
-        <Highlight>Zitsol</Highlight>, I&apos;ve focused on creating responsive,
-        SEO-optimized interfaces that improve user experience.
+        With over 1 year of professional experience, currently at{" "}
+        <Highlight>GlobeWyze Inc.</Highlight> and previously at{" "}
+        <Highlight>Xecutors</Highlight> and <Highlight>Zitsol</Highlight>, I&apos;ve
+        focused on creating responsive, SEO-optimized interfaces that improve user
+        experience.
       </Paragraph>
       <Link
         href={"mailto:samarhayat.dev@gmail.com"}
