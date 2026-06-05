@@ -30,7 +30,7 @@ export const SingleProductClient = ({ product }: { product: Product }) => {
       </motion.div>
 
       {hasMultipleImages && (
-        <div className="flex gap-3 mt-4 overflow-x-auto pb-1">
+        <div className="flex gap-3 mt-4 overflow-x-auto py-1">
           {product.images.map((image, idx) => {
             const isActive = activeImage === image;
             return (
@@ -39,19 +39,21 @@ export const SingleProductClient = ({ product }: { product: Product }) => {
                 key={`image-thumbnail-${idx}`}
                 aria-label={`View screenshot ${idx + 1}`}
                 aria-pressed={isActive}
-                className={`flex-shrink-0 rounded-lg overflow-hidden transition ring-offset-2 ${
+                className={`flex-shrink-0 rounded-lg border-2 transition ${
                   isActive
-                    ? "ring-2 ring-gray-800"
-                    : "ring-1 ring-neutral-200 opacity-70 hover:opacity-100"
+                    ? "border-gray-800"
+                    : "border-neutral-200 opacity-70 hover:opacity-100"
                 }`}
               >
-                <Image
-                  src={image}
-                  alt={`${product.title} - Thumbnail ${idx + 1}`}
-                  height={80}
-                  width={120}
-                  className="h-16 w-24 md:h-20 md:w-32 object-cover object-top"
-                />
+                <div className="rounded-[6px] overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={`${product.title} - Thumbnail ${idx + 1}`}
+                    height={80}
+                    width={120}
+                    className="h-16 w-24 md:h-20 md:w-32 object-cover object-top block"
+                  />
+                </div>
               </button>
             );
           })}
