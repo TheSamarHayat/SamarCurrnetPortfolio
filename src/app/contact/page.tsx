@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Samar Hayat",
   description:
-    "Samar Hayat is a Frontend Developer with over 1 year of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Get in touch to discuss building high-performance, responsive web applications using React.js, Next.js, TypeScript, and JavaScript.",
+    "Samar Hayat is a Frontend Developer with 2.5+ years of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Get in touch to discuss building high-performance, responsive web applications using React.js, Next.js, TypeScript, and JavaScript.",
 };
 
 export default function Projects() {

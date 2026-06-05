@@ -4,7 +4,7 @@ Here’s a `README.md` file template for your portfolio that you can upload to G
 
 # Samar Hayat - Frontend Developer Portfolio
 
-Welcome to my portfolio! I’m **Samar Hayat**, a passionate **Frontend Developer** with over **1+ year of experience** in building high-performance, responsive web applications using **React.js**, **Next.js**, and **JavaScript**. My portfolio showcases the projects I’ve worked on, from web development to automation tools, and highlights my technical skills.
+Welcome to my portfolio! I’m **Samar Hayat**, a passionate **Frontend Developer** with **2.5+ years of experience** in building high-performance, responsive web applications using **React.js**, **Next.js**, and **JavaScript**. My portfolio showcases the projects I’ve worked on, from web development to automation tools, and highlights my technical skills.
 
 ## Live Portfolio
 
@@ -36,7 +36,6 @@ An automated platform for travel agencies, offering features like ticket invoice
 
 ## Get In Touch
 
-- **LinkedIn**: [Samar Hayat](https://www.linkedin.com/in/samarhayatdev)
 - **Email**: samarhayat.dev@gmail.com
 
 ## How to Use

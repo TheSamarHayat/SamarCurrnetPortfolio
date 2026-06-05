@@ -8,7 +8,7 @@ import About from "@/components/About";
 export const metadata: Metadata = {
   title: "About | Samar Hayat",
   description:
-    "Samar Hayat, Frontend Developer with over 1 year of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol, builds responsive, high-performance web apps using React, Next.js, TypeScript, and JavaScript.",
+    "Samar Hayat, Frontend Developer with 2.5+ years of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol, builds responsive, high-performance web apps using React, Next.js, TypeScript, and JavaScript.",
 };
 
 export default function AboutPage() {

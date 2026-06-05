@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Projects | Samar Hayat",
       description:
-        "Samar Hayat is a Frontend Developer with over 1 year of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Explore his projects showcasing high-performance web applications built with React.js, Next.js, TypeScript, and JavaScript.",
+        "Samar Hayat is a Frontend Developer with 2.5+ years of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Explore his projects showcasing high-performance web applications built with React.js, Next.js, TypeScript, and JavaScript.",
     };
   }
 }

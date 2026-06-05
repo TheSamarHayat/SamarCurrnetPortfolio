@@ -23,7 +23,7 @@ export default function About() {
           experiences.
         </Paragraph>
         <Paragraph className="mt-4">
-          With over 1 year of professional experience, currently working at{" "}
+          With 2.5+ years of professional experience, currently working at{" "}
           <Highlight>GlobeWyze Inc.</Highlight> and previously at{" "}
           <Highlight>Xecutors</Highlight> and <Highlight>Zitsol</Highlight>, I&apos;ve
           worked extensively with cutting-edge technologies, including{" "}

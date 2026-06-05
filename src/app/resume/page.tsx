@@ -16,7 +16,7 @@ export default function Home() {
       {/* <span className="text-4xl">💼</span> */}
       <Heading className="font-black">Work History</Heading>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a Frontend Developer with over 1 year of professional experience in
+        I&apos;m a Frontend Developer with 2.5+ years of professional experience in
         building high-performance, responsive web applications using React.js,
         Next.js, TypeScript, and JavaScript.
       </Paragraph>

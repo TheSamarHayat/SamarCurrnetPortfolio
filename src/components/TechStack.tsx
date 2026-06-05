@@ -12,6 +12,10 @@ import {
   SiTailwindcss,
   SiMui,
   SiShadcnui,
+  SiJira,
+  SiNestjs,
+  SiBitbucket,
+  SiSupabase,
 } from "react-icons/si";
 import { TbBrandGit } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
@@ -76,6 +80,11 @@ export const TechStack = () => {
       bgColor: "bg-gray-200",
     },
     {
+      title: "Bitbucket",
+      icon: <SiBitbucket className={twMerge(iconClass, "text-blue-600")} />,
+      bgColor: "bg-blue-100",
+    },
+    {
       title: "Next.js",
       icon: <SiNextdotjs className={twMerge(iconClass, "text-black")} />,
       bgColor: "bg-gray-100",
@@ -84,6 +93,21 @@ export const TechStack = () => {
       title: "Postman",
       icon: <SiPostman className={twMerge(iconClass, "text-orange-600")} />,
       bgColor: "bg-orange-100",
+    },
+    {
+      title: "Jira",
+      icon: <SiJira className={twMerge(iconClass, "text-blue-500")} />,
+      bgColor: "bg-blue-100",
+    },
+    {
+      title: "NestJS",
+      icon: <SiNestjs className={twMerge(iconClass, "text-red-600")} />,
+      bgColor: "bg-red-100",
+    },
+    {
+      title: "Supabase",
+      icon: <SiSupabase className={twMerge(iconClass, "text-emerald-500")} />,
+      bgColor: "bg-emerald-100",
     },
   ];
 

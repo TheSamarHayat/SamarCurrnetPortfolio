@@ -61,7 +61,7 @@ export default function RootLayout({
 
         <meta
           property="article:author"
-          content="https://linkedin.com/in/samarhayatdev"
+          content="Samar Hayat"
         />
         <meta property="profile:username" content="Samar Hayat" />
         <meta
@@ -84,8 +84,7 @@ export default function RootLayout({
               description:
                 "Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills.",
               sameAs: [
-                "https://linkedin.com/in/samarhayatdev",
-                "https://github.com/samarhayatdev",
+                "https://github.com/thesamarhayat",
                 "https://discordapp.com/users/752720923534295160",
               ],
             }),
