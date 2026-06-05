@@ -1,0 +1,350 @@
+
+All projects
+Samar Hayat Info
+This project is for my own use, such as using it for my portfolio and rewriting my resume.
+
+
+
+How can I help you today?
+
+
+Updating resume and portfolio with project information
+Last message Apr 27
+Portfolio data consolidation
+Last message Apr 24
+Memory
+Only you
+Purpose & context Samar is a Frontend Developer based in Islamabad, Pakistan, currently employed at GlobeWyze Inc. The overarching goal is to synchronize and professionalize all career-facing platforms — portfolio website, LinkedIn profile, and resume — so they present consistent, accurate, and compelling information for job applications. The immediate concern is building a red-flag-free resume grounded in a unified source of truth. Current state A merged profile document (samarhayatmergedprofile.txt) has been compiled from Samar's portfolio website and LinkedIn profile, serving as the canonical reference going forward. Key consistency issues were identified across platforms, most notably: The bio on both platforms understates experience (describes "1 year" when actual experience is closer to 2.5 years from August 2023 onward) Location phrasing inconsistency ("Pakistan" vs. "Islamabad, Pakistan") Inconsistent casing of "ZITSOL" across platforms Skills present on LinkedIn but missing from portfolio (Jira, Figma, Nhost) and vice versa (Docker) Education details are missing from both platforms and need to be added A unified professional bio was produced as a ready-to-copy asset. The next step — updating the resume, LinkedIn, and portfolio using this merged profile — was initiated but not yet executed. On the horizon Update resume using the merged profile as the foundation Update LinkedIn profile for consistency with the merged profile Update portfolio website to match Add education information to all platforms before finalizing Tools & resources Tech stack in use/relevant to Samar's work: React.js, Next.js, TypeScript, Tailwind CSS, ShadCN, GraphQL, Apollo Client, Hasura, Nhost, Amadeus API, Figma, Jira, Docker Key projects documented: Xecutors Website, Gogency, Silk Travels Work history spans six roles: Frontend Developer and QA Engineer at GlobeWyze Inc., plus roles at Xecutors, Citadel Solutions, and ZITSOL (two roles) Reference file: samarhayatmergedprofile.txt
+
+Last updated yesterday
+
+Instructions
+Add instructions to tailor Claude’s responses
+
+Files
+
+samar_hayat_merged_profile.txt
+317 lines
+
+txt
+
+
+samar_hayat_merged_profile.txt
+================================================================================
+SAMAR HAYAT — MERGED PROFILE (Portfolio + LinkedIn)
+Compiled: April 2026
+================================================================================
+ 
+LinkedIn URL  : www.linkedin.com/in/thesamarhayatt
+Portfolio URL : https://new-portfolio-7eukcyd8l-samar-hayats-projects.vercel.app
+Email         : thesamarhayat@gmail.com
+Location      : Islamabad / Rawalpindi, Pakistan
+Open To Work  : Islamabad + remote | On-site · Hybrid · Remote
+ 
+ 
+--------------------------------------------------------------------------------
+PROFESSIONAL HEADLINE
+--------------------------------------------------------------------------------
+ 
+Frontend Developer | React.js & Next.js Expert | Pixel-Perfect UI Builder |
+Performance & SEO Optimizer | Open Source Contributor
+ 
+ 
+--------------------------------------------------------------------------------
+PROFESSIONAL SUMMARY  (use this on resume & both platforms)
+--------------------------------------------------------------------------------
+ 
+Frontend Developer with 1+ year of professional experience building fast,
+responsive, and pixel-perfect web applications using React.js and Next.js.
+Skilled in TypeScript, Tailwind CSS, ShadCN, MUI, and GraphQL, with hands-on
+experience integrating third-party APIs (LinkedIn, Meta, TikTok, Amadeus,
+Stripe, Google Gmail, WhatsApp). Passionate about clean, maintainable code,
+performance optimization, SEO, and exceptional user experience. Open-source
+contributor and continuous learner.
+ 
+ 
+--------------------------------------------------------------------------------
+WORK EXPERIENCE
+--------------------------------------------------------------------------------
+ 
+1. GlobeWyze Inc. — Frontend Developer
+   Oct 2025 – Present  |  Islamabad, Pakistan  |  Full-time, On-site
+   (Total at GlobeWyze: 9 months across both roles)
+ 
+   • Build modern web applications using React.js and Next.js with pixel-perfect
+     UI implementation based on Figma designs.
+   • Develop and maintain responsive web applications ensuring cross-browser
+     compatibility and mobile responsiveness.
+   • Integrate GraphQL APIs for seamless data management.
+   • Optimize component performance for enhanced user experience.
+   • Collaborate with backend team to deliver cohesive end-to-end features.
+   • Implement best practices in code quality, responsive design, and
+     accessibility standards.
+   • Ensure cross-browser compatibility and mobile responsiveness.
+ 
+   Skills used: React.js, Next.js, TypeScript, GraphQL, Tailwind CSS, Figma,
+                Git, GitHub
+ 
+ 
+2. GlobeWyze Inc. — QA Engineer
+   Aug 2025 – Oct 2025  |  Islamabad, Pakistan  |  Full-time, On-site
+ 
+   • Conducted rigorous testing on React-based UI components.
+   • Ensured pixel-perfect alignment with Figma designs.
+   • Tested responsive functionality across multiple devices.
+   • Identified and documented UI/UX inconsistencies.
+   • Collaborated with the frontend team to catch and resolve bugs early.
+   • Improved overall code quality and maintained high UX standards.
+ 
+   Skills used: React.js, Next.js, Figma, Jira, SQL
+ 
+ 
+3. Xecutors — Assistant Website Developer
+   Jul 2024 – Jun 2025  |  Chakwal, Punjab, Pakistan  |  Full-time, On-site
+   (1 year)
+ 
+   • Developed and maintained responsive web applications using Next.js and
+     React.js to build and refine production-grade web apps.
+   • Integrated APIs from platforms including LinkedIn, Meta, and TikTok.
+   • Worked with Nhost, Hasura, and Apollo Client for efficient data management.
+   • Used ShadCN component library to build consistent, accessible UIs.
+   • Collaborated with designers, product managers, and backend developers.
+   • Optimized applications for SEO and performance.
+   • Ensured high performance and scalability across all web applications.
+ 
+   Skills used: Next.js, React.js, TypeScript, Tailwind CSS, ShadCN, GraphQL,
+                Apollo Client, Hasura, Nhost, JavaScript, SEO, Git
+ 
+ 
+4. Citadel Solutions — Website Developer
+   May 2024 – Jul 2024  |  Lahore, Punjab, Pakistan  |  Full-time, On-site
+   (3 months — freelance/contract projects)
+ 
+   • Developed websites using WordPress tailored to client requirements.
+   • Implemented on-page SEO strategies to improve search visibility.
+   • Utilized JavaScript for dynamic and interactive website functionality.
+   • Delivered responsive and mobile-friendly solutions.
+   • Managed client communications and project timelines.
+ 
+   Skills used: WordPress, JavaScript, SEO, HTML, CSS
+ 
+ 
+5. ZITSOL — Junior Website Developer
+   Nov 2023 – Apr 2024  |  Chakwal, Punjab, Pakistan  |  Full-time, On-site
+   (6 months)
+ 
+   • Built and maintained WordPress websites ensuring high performance.
+   • Used Elementor and Gutenberg for custom website designs.
+   • Implemented advanced SEO strategies to drive organic traffic.
+   • Utilized JavaScript, HTML, CSS, and Tailwind CSS for dynamic web
+     functionality.
+   • Optimized website performance and loading speeds.
+   • Created responsive layouts for various screen sizes.
+ 
+   Skills used: WordPress, Elementor, Gutenberg, JavaScript, HTML5, CSS,
+                Tailwind CSS, SEO
+ 
+ 
+6. ZITSOL — Website Developer Intern
+   Aug 2023 – Oct 2023  |  Chakwal, Punjab, Pakistan  |  Full-time, On-site
+   (3 months)
+ 
+   • Gained proficiency in WordPress development during a structured internship.
+   • Used Elementor and Gutenberg to create responsive websites.
+   • Enhanced SEO knowledge and implemented techniques to improve site
+     visibility.
+   • Developed responsive web pages using HTML, CSS, and Tailwind CSS.
+   • Assisted senior developers with website maintenance and updates.
+   • Learned best practices in web development and design.
+ 
+   Skills used: WordPress, Elementor, Gutenberg, HTML5, CSS, Tailwind CSS, SEO
+ 
+ 
+--------------------------------------------------------------------------------
+PROJECTS
+--------------------------------------------------------------------------------
+ 
+1. Xecutors Website
+   Tech: Next.js, Tailwind CSS
+   Role: Contributor (partial — enhanced functionality and design)
+ 
+   A full-scale software house website offering design and development services,
+   tailored solutions, and a seamless client experience. Covers web, mobile,
+   and emerging technologies including AI, IoT, and AR. I contributed to
+   specific parts of this website, refining functionality and design elements.
+ 
+   Live: https://xecutors.com
+ 
+ 
+2. Gogency
+   Tech: Next.js, Tailwind CSS, ShadCN UI
+   Role: Frontend Developer
+ 
+   An automated traveling portal designed for travel agencies to streamline
+   day-to-day operations. Features include automatic ticket invoice generation,
+   email auto-messaging, a fully automated HR system, social media management
+   tools, and the ability to generate fully functional websites with a single
+   click. Integrates social media management directly from the platform.
+ 
+   Live: [Gogency live link — add URL]
+ 
+ 
+3. Silk Travels
+   Tech: React.js, Tailwind CSS, Multiple APIs
+   Role: Frontend Developer (built at Xecutors using Gogency's template system)
+ 
+   A comprehensive front-end travel booking platform. Serves as the frontend
+   interface for Gogency's travel management system. Integrates multiple APIs:
+   • Amadeus API — flight data
+   • Google Gmail API — communication
+   • Stripe API — payments
+   • WhatsApp API — customer interactions
+ 
+   Features: flight search and display, inquiry submission, consultant CRUD
+   portal, invoice generation, and full travel booking management.
+ 
+   Live: [Silk Travels live link — add URL]
+ 
+ 
+--------------------------------------------------------------------------------
+SKILLS
+--------------------------------------------------------------------------------
+ 
+CORE / PRIMARY SKILLS
+  React.js            — 2+ experiences (GlobeWyze, Xecutors)
+  Next.js             — 2+ experiences (GlobeWyze, Xecutors)
+  JavaScript (ES6+)   — 4+ experiences across all companies
+  TypeScript          — GlobeWyze, Xecutors
+  Tailwind CSS        — 3+ experiences (Xecutors + 2 others)
+  GraphQL             — GlobeWyze, Xecutors
+  Apollo / Apollo GraphQL — Xecutors
+  ShadCN              — Xecutors
+  MUI (Material UI)   — Portfolio listed
+  HTML5               — Multiple roles
+  CSS3                — Multiple roles
+  Git & GitHub        — Ongoing
+  Postman             — API testing
+  Figma               — GlobeWyze (QA & Frontend)
+ 
+DATA / BACKEND TOOLS
+  Hasura              — Xecutors
+  Nhost               — Xecutors
+  Apollo Client       — Xecutors
+  SQL                 — GlobeWyze (QA)
+  Jira                — GlobeWyze (QA)
+ 
+CAN ALSO WORK WITH (secondary / supporting skills)
+  WordPress           — Citadel Solutions, ZITSOL
+  Elementor           — 2 experiences at ZITSOL
+  Gutenberg           — 2 experiences at ZITSOL
+  SEO (On-page)       — Multiple companies
+  PHP                 — Portfolio listed
+  Docker              — Portfolio listed
+ 
+INDUSTRY / SOFT SKILLS (LinkedIn listed)
+  Web Application Development
+  Front-End Development
+  API Development
+  Optimizing Performance
+  Analytical Skills
+  Website Administration
+  Framework Design
+ 
+ 
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+ 
+[NOTE: No education data found on portfolio or LinkedIn screenshots.
+Add your degree, institution, graduation year here before finalizing.]
+ 
+ 
+--------------------------------------------------------------------------------
+SOCIAL / CONTACT LINKS
+--------------------------------------------------------------------------------
+ 
+LinkedIn    : www.linkedin.com/in/thesamarhayatt
+GitHub      : [Add GitHub URL from portfolio sidebar]
+WhatsApp    : [Available on portfolio — add number if desired]
+Discord     : [Available on portfolio — add handle if desired]
+Email       : thesamarhayat@gmail.com
+ 
+ 
+--------------------------------------------------------------------------------
+CONSISTENCY NOTES  (things to sync / fix across platforms)
+--------------------------------------------------------------------------------
+ 
+The following items differ slightly between portfolio and LinkedIn. Resolve
+these before finalizing your resume so there are no red flags:
+ 
+1. LOCATION
+   - Portfolio says: \"Based in Pakistan\"
+   - LinkedIn says: \"Islamabad, Pakistan\"
+   → Use: \"Islamabad, Pakistan\" on all platforms.
+ 
+2. JOB TITLE AT GLOBEWYZE
+   - Portfolio says: \"Frontend Developer\"
+   - LinkedIn says: \"Frontend Developer\" ✓ (matches — good)
+ 
+3. XECUTORS ROLE TITLE
+   - Portfolio says: \"Assistant Website Developer\"
+   - LinkedIn says: \"Assistant Website Developer\" ✓ (matches — good)
+ 
+4. ZITSOL COMPANY NAME CASING
+   - Portfolio uses: \"ZITSOL\" and \"Zitsol\" inconsistently
+   - LinkedIn uses: \"ZITSOL\"
+   → Use: \"ZITSOL\" consistently everywhere.
+ 
+5. CITADEL SOLUTIONS — MISSING FROM LINKEDIN HEADLINE/ABOUT
+   - It appears in the LinkedIn Experience section (3 months, May–Jul 2024)
+     but is not mentioned in the About section or portfolio bio.
+   → Either add it to your bio (\"also worked with Citadel Solutions\") or
+     keep it only in the Experience section — just be consistent.
+ 
+6. EXPERIENCE SUMMARY (\"1 year\" vs actual timeline)
+   - Your internship started Aug 2023. Total professional experience including
+     internship is ~2.5 years as of April 2026.
+   - Your formal full-time experience (post-internship) is ~2 years.
+   → Update bio from \"over 1 year\" to \"2+ years\" to reflect reality.
+ 
+7. LINKEDIN SKILLS NOT ON PORTFOLIO
+   - Jira, SQL, Figma (Software), Apollo GraphQL, Nhost are on LinkedIn
+     but not listed in portfolio tech stack.
+   → Add Jira and Figma to the portfolio skills section for consistency.
+ 
+8. DOCKER — PORTFOLIO ONLY
+   - Docker appears in portfolio \"Can Also Work With\" section but has no
+     LinkedIn skill entry.
+   → Add Docker to LinkedIn skills if you genuinely have experience with it.
+ 
+9. PROJECTS — NO GITHUB LINKS
+   - Projects show only \"Live Preview\" links. Adding GitHub repo links
+     (even private with note \"private repo\") strengthens the portfolio.
+ 
+10. BLOGS SECTION
+    - Portfolio has a \"Blogs\" nav link. If there's no content there yet,
+      either add posts or remove the link — empty sections can look
+      unprofessional to recruiters.
+ 
+ 
+--------------------------------------------------------------------------------
+RECOMMENDED UNIFIED BIO  (use this across portfolio, LinkedIn, and resume)
+--------------------------------------------------------------------------------
+ 
+\"Frontend Developer with 2+ years of experience building fast, responsive,
+and pixel-perfect web applications. Specializing in React.js, Next.js, and
+TypeScript, I create scalable interfaces with Tailwind CSS, ShadCN, and MUI,
+and integrate complex APIs including GraphQL, REST, and platform APIs from
+LinkedIn, Meta, TikTok, Amadeus, Stripe, and WhatsApp.
+ 
+Currently working at GlobeWyze Inc. (Islamabad), with previous experience at
+Xecutors, Citadel Solutions, and ZITSOL. I focus on clean code, performance
+optimization, SEO-friendly architecture, and exceptional user experience.
+Open-source contributor and continuous learner.\"
+ 
+================================================================================
+END OF MERGED PROFILE — SAMAR HAYAT
+Compiled from: Portfolio website + LinkedIn profile screenshots (April 2026)
+================================================================================
+ 
+

@@ -11,6 +11,9 @@ Keep these files around so future updates don’t start from zero.
 - **`row_data_for_update_portfolio.txt`**
   - Raw consolidated content and notes used to update portfolio/resume (projects, experience, skills, consistency notes).
 
+- **`update_prompt.txt`**
+  - Next.js upgrade notes/prompt used during the Next.js major version migration.
+
 - **`update_tailwind_prompt.txt`**
   - Tailwind/UI update notes and prompts used while iterating on the portfolio UI.
 
@@ -19,4 +22,6 @@ Keep these files around so future updates don’t start from zero.
 - The generated resume output is stored in `resume/`:
   - **Source**: `resume/samar_hayat_resume.tex`
   - **PDF**: `resume/samar_hayat_resume.pdf`
+
+- Copies of the `.txt` reference files are kept in `docs/notes/` for convenience.
 
