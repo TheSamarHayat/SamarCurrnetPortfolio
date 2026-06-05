@@ -2,10 +2,11 @@ import glob from "fast-glob";
 import * as path from "path";
 import { cacheLife, cacheTag } from "next/cache";
 
-async function importBlog(blogFileNames: string) {
-  const { meta } = await import(`@/app/blog/${blogFileNames}`);
+async function importBlog(blogFileName: string) {
+  const slug = blogFileName.replace(/\/content\.mdx$/, "").replace(/\.mdx$/, "");
+  const { meta } = await import(`@/app/blog/${slug}/meta`);
   return {
-    slug: blogFileNames.replace(/(\/content)?\.mdx$/, ""),
+    slug,
     ...meta,
   };
 }

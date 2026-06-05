@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { Badge } from "./Badge";
 
@@ -10,12 +10,11 @@ import { SidebarHeader } from "./SidebarHeader";
 import { Navigation } from "./Navigation";
 
 export const ToggleSidebar = () => {
-  const [open, setOpen] = useState(() => {
-    if (typeof window === "undefined") {
-      return true;
-    }
-    return !isMobile();
-  });
+  const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    setOpen(!isMobile());
+  }, []);
 
   return (
     <>
