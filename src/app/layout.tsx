@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
+import { Suspense } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <meta
           name="google-site-verification"
@@ -79,8 +80,7 @@ export default function RootLayout({
               jobTitle: "Frontend Developer",
               image: "https://www.samarhayat.online/images/me.png",
               email: "mailto:samarhayat.dev@gmail.com",
-              telephone: "+923495129992", // Replace with your contact number
-
+              telephone: "+923495129992",
               description:
                 "Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills.",
               sameAs: [
@@ -110,13 +110,17 @@ export default function RootLayout({
             gtag('config', 'G-ZMEJ7HL9SP');
           `}
         </Script>
-        <Sidebar />
+        <Suspense fallback={null}>
+          <Sidebar />
+        </Suspense>
         <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
           <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
             {children}
-            <Analytics />
-            <SpeedInsights />
-            <Footer />
+            <Suspense fallback={null}>
+              <Analytics />
+              <SpeedInsights />
+              <Footer />
+            </Suspense>
           </div>
         </div>
       </body>

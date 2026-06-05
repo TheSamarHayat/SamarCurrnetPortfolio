@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Product } from "@/types/products";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "./ViewTransitionLink";
 import Image from "next/image";
 import { Heading } from "./Heading";
 import { Paragraph } from "./Paragraph";

@@ -1,6 +1,6 @@
 import React from "react";
 import { navlinks } from "@/constants/navlinks";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "./ViewTransitionLink";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
 import { Heading } from "./Heading";

@@ -5,7 +5,7 @@ import { Heading } from "./Heading";
 import { Paragraph } from "./Paragraph";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "./ViewTransitionLink";
 
 export const BlogClient = ({ blog, index }: { blog: Blog; index: number }) => {
   const [hovered, setHovered] = useState<string | null>(null);

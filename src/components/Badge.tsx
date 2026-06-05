@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "./ViewTransitionLink";
 
 export const Badge = ({
   text,

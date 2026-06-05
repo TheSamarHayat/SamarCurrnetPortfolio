@@ -1,23 +1,25 @@
 import glob from "fast-glob";
 import * as path from "path";
+import { cacheLife, cacheTag } from "next/cache";
 
-async function importBlog(blogFileNames: any) {
-  let { meta, default: component } = await import(
-    `@/app/blog/${blogFileNames}`
-  );
+async function importBlog(blogFileNames: string) {
+  const { meta } = await import(`@/app/blog/${blogFileNames}`);
   return {
     slug: blogFileNames.replace(/(\/content)?\.mdx$/, ""),
     ...meta,
-    component,
   };
 }
 
 export async function getAllBlogs() {
-  let blogFileNames = await glob(["*.mdx", "*/content.mdx"], {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("blogs");
+
+  const blogFileNames = await glob(["*.mdx", "*/content.mdx"], {
     cwd: path.join(process.cwd(), "src/app/blog"),
   });
 
-  let blogs = await Promise.all(blogFileNames.map(importBlog));
+  const blogs = await Promise.all(blogFileNames.map(importBlog));
 
   return blogs.sort((a, b) => {
     const dateA = new Date(a.date);

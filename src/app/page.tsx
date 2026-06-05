@@ -5,7 +5,7 @@ import { NotAProBut } from "@/components/NotAProBut";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "@/components/ViewTransitionLink";
 import { IconMail } from "@tabler/icons-react";
 
 export default function Home() {

@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { Badge } from "./Badge";
 
@@ -10,17 +10,12 @@ import { SidebarHeader } from "./SidebarHeader";
 import { Navigation } from "./Navigation";
 
 export const ToggleSidebar = () => {
-  // Default to true (open) for desktop, will be adjusted on mount for mobile
-  const [open, setOpen] = useState(true);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    // Set initial state based on screen size after mount
-    if (isMobile()) {
-      setOpen(false);
+  const [open, setOpen] = useState(() => {
+    if (typeof window === "undefined") {
+      return true;
     }
-  }, []);
+    return !isMobile();
+  });
 
   return (
     <>
@@ -44,12 +39,6 @@ export const ToggleSidebar = () => {
         )}
       </AnimatePresence>
 
-      {/* <button
-        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
-        onClick={() => setOpen(!open)}
-      >
-        <IconLayoutSidebarRightCollapse className="h-4 w-4 text-secondary" />
-      </button> */}
       <button
         className="fixed lg:hidden bottom-4 right-4 h-12 w-12 border border-white/10 bg-slate-900 shadow-2xl shadow-zinc-900 rounded-full backdrop-blur-sm flex items-center justify-center z-50 group"
         onClick={() => setOpen(!open)}

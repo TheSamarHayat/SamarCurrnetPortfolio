@@ -6,6 +6,7 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 
 import { redirect } from "next/navigation";
+import { Suspense } from "react";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function SingleProjectPage({
+async function ProjectContent({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -39,9 +40,22 @@ export default async function SingleProjectPage({
   if (!product) {
     redirect("/projects");
   }
+
   return (
     <Container>
       <SingleProduct product={product} />
     </Container>
+  );
+}
+
+export default function SingleProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  return (
+    <Suspense fallback={null}>
+      <ProjectContent params={params} />
+    </Suspense>
   );
 }

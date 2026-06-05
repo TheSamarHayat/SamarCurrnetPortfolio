@@ -3,7 +3,7 @@ import { formatDate } from "../../lib/formatDate";
 import { Prose } from "@/components/Prose";
 import { Container } from "./Container";
 import { Heading } from "./Heading";
-import Link from "next/link";
+import { ViewTransitionLink as Link } from "./ViewTransitionLink";
 import { Paragraph } from "./Paragraph";
 
 function ArrowLeftIcon(props: any) {
