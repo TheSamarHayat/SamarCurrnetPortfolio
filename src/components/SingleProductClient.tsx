@@ -9,41 +9,54 @@ export const SingleProductClient = ({ product }: { product: Product }) => {
     product.thumbnail
   );
 
+  const hasMultipleImages = product.images.length > 1;
+
   return (
-    <>
+    <div className="mt-4">
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         key={product.slug}
-        className="relative"
+        className="w-full rounded-lg overflow-hidden bg-gray-100 relative"
       >
         <Image
           src={activeImage}
           alt={`${product.title} - Project screenshot`}
-          height={1000}
-          width={1000}
-          className="rounded-md object-contain"
+          height={800}
+          width={800}
+          className="object-cover object-left-top w-full max-h-96"
         />
-        <div className="absolute bottom-0 bg-white h-40 w-full [mask-image:linear-gradient(to_bottom,transparent,white)]" />
       </motion.div>
 
-      <div className="flex flex-row justify-center my-8 flex-wrap">
-        {product.images.map((image, idx) => (
-          <button
-            onClick={() => setActiveImage(image)}
-            key={`image-thumbnail-${idx}`}
-          >
-            <Image
-              src={image}
-              alt={`${product.title} - Thumbnail ${idx + 1}`}
-              height={240}
-              width={240}
-              className="h-14 w-16 md:h-40 md:w-60 object-fit object-top mr-4 mb-4 border rounded-lg border-neutral-100"
-            />
-          </button>
-        ))}
-      </div>
-    </>
+      {hasMultipleImages && (
+        <div className="flex gap-3 mt-4 overflow-x-auto pb-1">
+          {product.images.map((image, idx) => {
+            const isActive = activeImage === image;
+            return (
+              <button
+                onClick={() => setActiveImage(image)}
+                key={`image-thumbnail-${idx}`}
+                aria-label={`View screenshot ${idx + 1}`}
+                aria-pressed={isActive}
+                className={`flex-shrink-0 rounded-lg overflow-hidden transition ring-offset-2 ${
+                  isActive
+                    ? "ring-2 ring-gray-800"
+                    : "ring-1 ring-neutral-200 opacity-70 hover:opacity-100"
+                }`}
+              >
+                <Image
+                  src={image}
+                  alt={`${product.title} - Thumbnail ${idx + 1}`}
+                  height={80}
+                  width={120}
+                  className="h-16 w-24 md:h-20 md:w-32 object-cover object-top"
+                />
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 };
