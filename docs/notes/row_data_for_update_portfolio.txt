@@ -278,34 +278,34 @@ The following items differ slightly between portfolio and LinkedIn. Resolve
 these before finalizing your resume so there are no red flags:
  
 1. LOCATION
-   - Portfolio says: \"Based in Pakistan\"
-   - LinkedIn says: \"Islamabad, Pakistan\"
-   → Use: \"Islamabad, Pakistan\" on all platforms.
+   - Portfolio says: "Based in Pakistan"
+   - LinkedIn says: "Islamabad, Pakistan"
+   → Use: "Islamabad, Pakistan" on all platforms.
  
 2. JOB TITLE AT GLOBEWYZE
-   - Portfolio says: \"Frontend Developer\"
-   - LinkedIn says: \"Frontend Developer\" ✓ (matches — good)
+   - Portfolio says: "Frontend Developer"
+   - LinkedIn says: "Frontend Developer" ✓ (matches — good)
  
 3. XECUTORS ROLE TITLE
-   - Portfolio says: \"Assistant Website Developer\"
-   - LinkedIn says: \"Assistant Website Developer\" ✓ (matches — good)
+   - Portfolio says: "Assistant Website Developer"
+   - LinkedIn says: "Assistant Website Developer" ✓ (matches — good)
  
 4. ZITSOL COMPANY NAME CASING
-   - Portfolio uses: \"ZITSOL\" and \"Zitsol\" inconsistently
-   - LinkedIn uses: \"ZITSOL\"
-   → Use: \"ZITSOL\" consistently everywhere.
+   - Portfolio uses: "ZITSOL" and "Zitsol" inconsistently
+   - LinkedIn uses: "ZITSOL"
+   → Use: "ZITSOL" consistently everywhere.
  
 5. CITADEL SOLUTIONS — MISSING FROM LINKEDIN HEADLINE/ABOUT
    - It appears in the LinkedIn Experience section (3 months, May–Jul 2024)
      but is not mentioned in the About section or portfolio bio.
-   → Either add it to your bio (\"also worked with Citadel Solutions\") or
+   → Either add it to your bio ("also worked with Citadel Solutions") or
      keep it only in the Experience section — just be consistent.
  
-6. EXPERIENCE SUMMARY (\"1 year\" vs actual timeline)
+6. EXPERIENCE SUMMARY ("1 year" vs actual timeline)
    - Your internship started Aug 2023. Total professional experience including
      internship is ~2.5 years as of April 2026.
    - Your formal full-time experience (post-internship) is ~2 years.
-   → Update bio from \"over 1 year\" to \"2+ years\" to reflect reality.
+   → Update bio from "over 1 year" to "2+ years" to reflect reality.
  
 7. LINKEDIN SKILLS NOT ON PORTFOLIO
    - Jira, SQL, Figma (Software), Apollo GraphQL, Nhost are on LinkedIn
@@ -313,16 +313,16 @@ these before finalizing your resume so there are no red flags:
    → Add Jira and Figma to the portfolio skills section for consistency.
  
 8. DOCKER — PORTFOLIO ONLY
-   - Docker appears in portfolio \"Can Also Work With\" section but has no
+   - Docker appears in portfolio "Can Also Work With" section but has no
      LinkedIn skill entry.
    → Add Docker to LinkedIn skills if you genuinely have experience with it.
  
 9. PROJECTS — NO GITHUB LINKS
-   - Projects show only \"Live Preview\" links. Adding GitHub repo links
-     (even private with note \"private repo\") strengthens the portfolio.
+   - Projects show only "Live Preview" links. Adding GitHub repo links
+     (even private with note "private repo") strengthens the portfolio.
  
 10. BLOGS SECTION
-    - Portfolio has a \"Blogs\" nav link. If there's no content there yet,
+    - Portfolio has a "Blogs" nav link. If there's no content there yet,
       either add posts or remove the link — empty sections can look
       unprofessional to recruiters.
  
@@ -331,7 +331,7 @@ these before finalizing your resume so there are no red flags:
 RECOMMENDED UNIFIED BIO  (use this across portfolio, LinkedIn, and resume)
 --------------------------------------------------------------------------------
  
-\"Frontend Developer with 2+ years of experience building fast, responsive,
+"Frontend Developer with 2+ years of experience building fast, responsive,
 and pixel-perfect web applications. Specializing in React.js, Next.js, and
 TypeScript, I create scalable interfaces with Tailwind CSS, ShadCN, and MUI,
 and integrate complex APIs including GraphQL, REST, and platform APIs from
@@ -340,11 +340,10 @@ LinkedIn, Meta, TikTok, Amadeus, Stripe, and WhatsApp.
 Currently working at GlobeWyze Inc. (Islamabad), with previous experience at
 Xecutors, Citadel Solutions, and ZITSOL. I focus on clean code, performance
 optimization, SEO-friendly architecture, and exceptional user experience.
-Open-source contributor and continuous learner.\"
+Open-source contributor and continuous learner."
  
 ================================================================================
 END OF MERGED PROFILE — SAMAR HAYAT
 Compiled from: Portfolio website + LinkedIn profile screenshots (April 2026)
 ================================================================================
  
-

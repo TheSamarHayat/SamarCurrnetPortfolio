@@ -1,27 +1,28 @@
 ## Info sources used in this repo
 
-This repo contains a few `.txt` files that act as **source-of-truth notes** for updating the portfolio + resume.
-Keep these files around so future updates don’t start from zero.
+These `.txt` files in `docs/notes/` are the **source-of-truth notes** for updating the portfolio and resume.
+Keep them here so future updates don't start from zero.
 
 ### Resume / portfolio references
 
-- **`resume_portfolio_guide.txt`**
+All files live in **`docs/notes/`**:
+
+- **`docs/notes/resume_portfolio_guide.txt`**
   - Guidelines for an ATS-friendly resume (sections, formatting, keywords, content selection).
 
-- **`row_data_for_update_portfolio.txt`**
+- **`docs/notes/row_data_for_update_portfolio.txt`**
   - Raw consolidated content and notes used to update portfolio/resume (projects, experience, skills, consistency notes).
 
-- **`update_prompt.txt`**
+- **`docs/notes/update_prompt.txt`**
   - Next.js upgrade notes/prompt used during the Next.js major version migration.
 
-- **`update_tailwind_prompt.txt`**
+- **`docs/notes/update_tailwind_prompt.txt`**
   - Tailwind/UI update notes and prompts used while iterating on the portfolio UI.
 
-### Notes
+### Resume output
 
-- The generated resume output is stored in `resume/`:
-  - **Source**: `resume/samar_hayat_resume.tex`
-  - **PDF**: `resume/samar_hayat_resume.pdf`
+The generated resume is stored in `resume/`:
 
-- Copies of the `.txt` reference files are kept in `docs/notes/` for convenience.
-
+- **Source**: `resume/samar_hayat_resume.tex`
+- **PDF**: `resume/samar_hayat_resume.pdf`
+- **Rebuild steps**: `resume/README.md`

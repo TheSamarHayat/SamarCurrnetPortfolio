@@ -27,4 +27,3 @@ Run your test suite if you have one, ensuring all tests pass with the new versio
 Verify performance improvements in your application. Measure and compare build times before and after, noting the significant improvements Turbopack should provide. Check rendering performance in your browser DevTools and compare with previous versions to validate the rendering performance improvements.
 
 Finally, review the official Next.js 16 migration guide at https://nextjs.org/docs/app/guides/upgrading/version-16 for any additional changes specific to your setup. Test the entire application flow end-to-end in a staging environment before deploying to production. Pay special attention to any custom configurations, third-party integrations, and critical user flows to ensure everything works as expected in the new version.
-
