@@ -1,22 +1,24 @@
-import { TbBrandGithub } from "react-icons/tb";
-import { TbBrandWhatsapp } from "react-icons/tb";
-import { TbBrandDiscord } from "react-icons/tb";
+import { IconMail } from "@tabler/icons-react";
+import { TbBrandDiscord, TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from "react-icons/tb";
 
 export const socials = [
-  // GitHub link
   {
     href: "https://github.com/thesamarhayat",
     label: "GitHub",
     icon: TbBrandGithub,
   },
-  // Email link
-  // {
-  //   href: "mailto:samarhayat.dev@gmail.com",
-  //   label: "Email",
-  //   icon: IconMail,
-  // },
   {
-    href: "https://wa.me/923495129992   ",
+    href: "https://www.linkedin.com/in/thesamarhayatt",
+    label: "LinkedIn",
+    icon: TbBrandLinkedin,
+  },
+  {
+    href: "mailto:samarhayat.dev@gmail.com",
+    label: "Email",
+    icon: IconMail,
+  },
+  {
+    href: "https://wa.me/923495129992",
     label: "WhatsApp",
     icon: TbBrandWhatsapp,
   },

@@ -54,7 +54,7 @@ export const SingleProduct = ({ product }: { product: Product }) => {
         {product?.content}
       </div>
 
-      {product.href && product.href !== "#" && (
+      {product.href && product.href !== "#" ? (
         <a
           href={product.href}
           target="_blank"
@@ -79,7 +79,18 @@ export const SingleProduct = ({ product }: { product: Product }) => {
             <path d="M13 6l6 6"></path>
           </svg>
         </a>
-      )}
+      ) : product.demoNote ? (
+        <p className="text-sm text-neutral-500 mt-8 max-w-xl">
+          {product.demoNote}{" "}
+          <a
+            href="mailto:samarhayat.dev@gmail.com"
+            className="text-neutral-700 underline underline-offset-2 hover:text-neutral-900"
+          >
+            Contact me for a walkthrough
+          </a>
+          .
+        </p>
+      ) : null}
     </article>
   );
 };

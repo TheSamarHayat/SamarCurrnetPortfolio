@@ -8,5 +8,6 @@ export type Product = {
   href: string;
   slug?: string;
   stack?: string[];
+  demoNote?: string;
   content?: React.ReactNode | string;
 };

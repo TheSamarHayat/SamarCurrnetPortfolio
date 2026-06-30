@@ -6,18 +6,24 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
+\usepackage{fontspec}
+\setmainfont{Ubuntu}[
+  Path=/usr/share/fonts/ubuntu/,
+  Extension=.ttf,
+  UprightFont=Ubuntu-R,
+  BoldFont=Ubuntu-B,
+  ItalicFont=Ubuntu-RI,
+  BoldItalicFont=Ubuntu-BI,
+]
+
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -38,10 +44,8 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\bfseries\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -76,12 +80,12 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Samar Hayat} \\ \vspace{1pt}
+    \textbf{\Huge Samar Hayat} \\ \vspace{1pt}
     \small
     Islamabad, Pakistan \textbar{}
     \href{mailto:samarhayat.dev@gmail.com}{samarhayat.dev@gmail.com} \textbar{}
     +92 349 5129992 \\
-    \href{https://www.samarhayat.online/}{samarhayat.online} \textbar{}
+    \href{https://www.thesamarhayat.com/}{thesamarhayat.com} \textbar{}
     \href{https://github.com/thesamarhayat}{github.com/thesamarhayat} \textbar{}
     \href{https://www.linkedin.com/in/thesamarhayatt}{linkedin.com/in/thesamarhayatt}
 \end{center}
@@ -89,7 +93,7 @@
 %-----------SUMMARY-----------
 \section{Summary}
 \small{
-  Frontend Developer with 2+ years of experience building fast, responsive, pixel-perfect web applications using \textbf{React.js}, \textbf{Next.js}, and \textbf{TypeScript}. Skilled in \textbf{Tailwind CSS}, \textbf{ShadCN}, and \textbf{MUI}; integrates \textbf{GraphQL}, \textbf{REST}, and APIs (LinkedIn, Meta, TikTok, Amadeus, Stripe, WhatsApp). Currently at GlobeWyze Inc.; previously at Xecutors, Citadel Solutions, and ZITSOL.
+  Frontend Developer with 2.5+ years of experience building fast, responsive, pixel-perfect web applications using \textbf{React.js}, \textbf{Next.js}, and \textbf{TypeScript}. Based in Islamabad, Pakistan; open to remote. Skilled in \textbf{Tailwind CSS}, \textbf{ShadCN}, and \textbf{MUI}; integrates \textbf{GraphQL}, \textbf{REST}, and APIs (LinkedIn, Meta, TikTok, Amadeus, Stripe, WhatsApp). Currently at GlobeWyze Inc.; previously at Xecutors, Citadel Solutions, and ZITSOL.
 }
 
 %-----------EXPERIENCE-----------
@@ -148,21 +152,33 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
+          {\textbf{NoteSeek} $|$ \emph{Next.js, NestJS, Prisma, Supabase, Stripe} $|$ Private (demo on request)}{}
+          \resumeItemListStart
+            \resumeItem{Contributed to NestJS BFF API and Next.js frontend for a telehealth platform with PHIPA-compliant auth, Stripe payments, Socket.io real-time queues, and multi-role access (patient, provider, clinic admin).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Fynnexa} $|$ \emph{Next.js, NestJS, Microservices, AWS, Supabase} $|$ Private (demo on request)}{}
+          \resumeItemListStart
+            \resumeItem{Contributed to a 10-service NestJS microservices backend and Next.js 15 frontend for deal management, KYC onboarding, real-time chat, AWS Bedrock AI assistant, and Stripe-powered payments.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
           {\textbf{Gogency} $|$ \emph{Next.js, React, TypeScript, Tailwind CSS, ShadCN UI} $|$ \href{https://gogency.com}{\underline{gogency.com}}}{}
           \resumeItemListStart
-            \resumeItem{Automated travel agency platform with ticket invoicing, HR management, social media tools, and one-click website generation.}
+            \resumeItem{Built frontend features for an automated travel agency platform with ticket invoicing, email automation, HR management, and one-click website generation using Next.js, TypeScript, and ShadCN UI.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Silk Travels} $|$ \emph{React, Tailwind CSS, REST APIs} $|$ \href{https://www.silktravels.co.uk/}{\underline{silktravels.co.uk}}}{}
           \resumeItemListStart
-            \resumeItem{Travel booking front end integrating Amadeus, Stripe, Gmail, and WhatsApp APIs for flight search, payments, and consultant workflows.}
+            \resumeItem{Built travel booking front end at Xecutors using Gogency templates; integrated Amadeus, Stripe, Gmail, and WhatsApp APIs for flight search, payments, and consultant workflows.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Xecutors} $|$ \emph{Next.js, Tailwind CSS} $|$ \href{https://www.xecutors.com}{\underline{xecutors.com}}}{}
           \resumeItemListStart
-            \resumeItem{Contributed to a software house website; refined UI components and improved performance across key landing pages.}
+            \resumeItem{Contributed to the company website with Next.js and Tailwind CSS; refined UI components, improved page performance, and implemented responsive landing page sections.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd

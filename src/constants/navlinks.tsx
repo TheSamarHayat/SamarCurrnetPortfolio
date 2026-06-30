@@ -27,9 +27,9 @@ export const navlinks = [
     label: "Blogs",
     icon: IconArticle,
   },
-  // {
-  //   href: "/contact",
-  //   label: "Contact",
-  //   icon: IconMail,
-  // },
+  {
+    href: "/contact",
+    label: "Contact",
+    icon: IconMail,
+  },
 ];

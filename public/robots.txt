@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://portfolio.subsyncpro.com
+Host: https://www.thesamarhayat.com
 
 # Sitemaps
-Sitemap: https://portfolio.subsyncpro.com/sitemap.xml
+Sitemap: https://www.thesamarhayat.com/sitemap.xml

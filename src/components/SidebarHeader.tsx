@@ -9,7 +9,7 @@ export const SidebarHeader = () => {
         <div className="bg-gradient-to-tr from-emerald-400 to-sky-400 p-[2px] rounded-full">
           <Image
             src={me}
-            alt="Avatar"
+            alt="Samar Hayat"
             height="40"
             width="40"
             className="object-cover object-top rounded-full ring-2 ring-white"
@@ -23,7 +23,7 @@ export const SidebarHeader = () => {
       <div className="flex text-sm flex-col justify-center">
         <p className="font-bold text-primary">Samar Hayat</p>
         <p className="text-xs uppercase tracking-wide text-secondary">
-          Developer
+          Frontend Developer
         </p>
       </div>
     </div>

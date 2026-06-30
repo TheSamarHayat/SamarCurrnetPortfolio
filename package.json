@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "resume:build": "cd resume && rm -f samar_hayat_resume.{aux,log,out,pdf} && rm -f ../public/resume/samar_hayat_resume.pdf && xelatex -interaction=nonstopmode samar_hayat_resume.tex && mkdir -p ../public/resume && cp samar_hayat_resume.pdf ../public/resume/",
+    "resume:docker": "docker run --rm -v \"${PWD}/resume:/work\" -v /usr/share/fonts/ubuntu:/usr/share/fonts/ubuntu:ro -w /work texlive/texlive:latest xelatex -interaction=nonstopmode samar_hayat_resume.tex && mkdir -p public/resume && cp resume/samar_hayat_resume.pdf public/resume/"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",

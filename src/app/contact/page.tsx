@@ -8,17 +8,17 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Samar Hayat",
   description:
-    "Samar Hayat is a Frontend Developer with 2.5+ years of professional experience, currently at GlobeWyze Inc. and previously at Xecutors and Zitsol. Get in touch to discuss building high-performance, responsive web applications using React.js, Next.js, TypeScript, and JavaScript.",
+    "Contact Samar Hayat, Frontend Developer with 2.5+ years of experience at GlobeWyze Inc. Reach out via email, LinkedIn, or WhatsApp to discuss React, Next.js, and TypeScript projects.",
 };
 
-export default function Projects() {
+export default function ContactPage() {
   return (
     <Container>
-      <span className="text-4xl">✉️</span>
-      <Heading className="font-black mb-2">Contact Me</Heading>
-      <Paragraph className="mb-10 max-w-xl">
-        Reach out to me over email or fill up this contact form. I will get back
-        to you ASAP - I promise.{" "}
+      <Heading className="font-black pb-4">Contact Me</Heading>
+      <Paragraph className="pb-10 max-w-xl">
+        Based in <Highlight>Islamabad, Pakistan</Highlight> (PKT, UTC+5). Open
+        to remote opportunities. The fastest way to reach me is by email or
+        LinkedIn — I typically respond within 1–2 business days.
       </Paragraph>
       <Contact />
     </Container>

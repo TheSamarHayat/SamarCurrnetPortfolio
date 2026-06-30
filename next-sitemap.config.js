@@ -62,27 +62,21 @@ async function getAdditionalPaths() {
     console.warn("Could not read products file:", error.message);
   }
 
-  // Get blog posts with dates
+  // Get blog posts with dates from meta.ts
   try {
-    const blogFiles = await glob(["*.mdx", "*/content.mdx"], {
+    const blogDirs = await glob(["*/meta.ts"], {
       cwd: path.join(process.cwd(), "src/app/blog"),
     });
 
-    for (const blogFile of blogFiles) {
+    for (const metaFile of blogDirs) {
       try {
-        const blogPath = path.join(
-          process.cwd(),
-          "src/app/blog",
-          blogFile
-        );
-        const blogContent = require("fs").readFileSync(blogPath, "utf-8");
-        
-        // Extract date from meta object
-        const dateMatch = blogContent.match(/date:\s*["']([^"']+)["']/);
-        const slugMatch = blogFile.replace(/(\/content)?\.mdx$/, "");
-        
+        const slug = path.dirname(metaFile);
+        const metaPath = path.join(process.cwd(), "src/app/blog", metaFile);
+        const metaContent = require("fs").readFileSync(metaPath, "utf-8");
+        const dateMatch = metaContent.match(/date:\s*["']([^"']+)["']/);
+
         additionalPaths.push({
-          loc: `/blog/${slugMatch}`,
+          loc: `/blog/${slug}`,
           priority: 0.7,
           changefreq: "monthly",
           lastmod: dateMatch
@@ -90,7 +84,7 @@ async function getAdditionalPaths() {
             : new Date().toISOString(),
         });
       } catch (error) {
-        console.warn(`Could not process blog file ${blogFile}:`, error.message);
+        console.warn(`Could not process blog meta ${metaFile}:`, error.message);
       }
     }
   } catch (error) {
@@ -101,7 +95,7 @@ async function getAdditionalPaths() {
 }
 
 module.exports = {
-  siteUrl: "https://portfolio.subsyncpro.com",
+  siteUrl: "https://www.thesamarhayat.com",
   generateRobotsTxt: true,
   additionalPaths: async () => {
     return await getAdditionalPaths();

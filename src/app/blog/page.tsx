@@ -10,7 +10,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blogs | Samar Hayat",
   description:
-    "Samar Hayat is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Technical notes and tutorials by Samar Hayat, Frontend Developer specializing in React, Next.js, and TypeScript.",
 };
 
 export default async function Blog() {

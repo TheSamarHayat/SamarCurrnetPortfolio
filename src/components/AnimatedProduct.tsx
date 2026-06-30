@@ -34,7 +34,7 @@ export const AnimatedProduct = ({
         <div className="h-full flex items-center justify-center">
           <Image
             src={product.thumbnail}
-            alt="thumbnail"
+            alt={`${product.title} project thumbnail`}
             height="200"
             width="300"
             className="rounded-md w-full h-full md:h-[150px] md:w-[300px] object-cover"

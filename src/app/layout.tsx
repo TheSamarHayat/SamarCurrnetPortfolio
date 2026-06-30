@@ -14,10 +14,13 @@ const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const siteDescription =
+  "Samar Hayat, Frontend Developer with 2.5+ years of experience building responsive web applications using React, Next.js, and TypeScript. Currently at GlobeWyze Inc.; previously at Xecutors, Citadel Solutions, and ZITSOL.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.thesamarhayat.com"),
   title: "Samar Hayat - Frontend Developer",
-  description:
-    "Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills.",
+  description: siteDescription,
 };
 
 export default function RootLayout({
@@ -33,30 +36,24 @@ export default function RootLayout({
           content="WngP93RQqWAa6aTf0uJvLP2UyYJ8SacTK6EUsv8h4lA"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.samarhayat.online/" />
+        <link rel="canonical" href="https://www.thesamarhayat.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Samar Hayat - Frontend Developer" />
-        <meta
-          property="og:description"
-          content="Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills."
-        />
-        <meta property="og:url" content="https://www.samarhayat.online/" />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:url" content="https://www.thesamarhayat.com/" />
         <meta
           property="og:image"
-          content="https://www.samarhayat.online/images/me.png"
+          content="https://www.thesamarhayat.com/images/me.png"
         />
         <meta property="og:site_name" content="Samar Hayat Portfolio" />
         <meta property="og:locale" content="en_US" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Samar Hayat - Frontend Developer" />
-        <meta
-          name="twitter:description"
-          content="Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills."
-        />
+        <meta name="twitter:description" content={siteDescription} />
         <meta
           name="twitter:image"
-          content="https://www.samarhayat.online/images/me.png"
+          content="https://www.thesamarhayat.com/images/me.png"
         />
 
         <meta
@@ -76,15 +73,15 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Samar Hayat",
-              url: "https://www.samarhayat.online/",
+              url: "https://www.thesamarhayat.com/",
               jobTitle: "Frontend Developer",
-              image: "https://www.samarhayat.online/images/me.png",
+              image: "https://www.thesamarhayat.com/images/me.png",
               email: "mailto:samarhayat.dev@gmail.com",
               telephone: "+923495129992",
-              description:
-                "Samar Hayat, Frontend Developer & tech blogger, specializes in UI/UX trends, open-source contributions, and remote work while enhancing his skills.",
+              description: siteDescription,
               sameAs: [
                 "https://github.com/thesamarhayat",
+                "https://www.linkedin.com/in/thesamarhayatt",
                 "https://discordapp.com/users/752720923534295160",
               ],
             }),
@@ -113,8 +110,8 @@ export default function RootLayout({
           <Sidebar />
         </Suspense>
         <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
-          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
-            {children}
+          <div className="flex flex-col min-h-screen flex-1 bg-white lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
+            <div className="flex-1">{children}</div>
             <Suspense fallback={null}>
               <Analytics />
               <SpeedInsights />

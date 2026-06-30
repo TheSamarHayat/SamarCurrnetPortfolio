@@ -22,6 +22,7 @@ export const products = [
     images: [NoteSeekLogo],
     stack: ["Next.js", "NestJS", "Prisma", "Supabase", "Stripe"],
     slug: "noteseek",
+    demoNote: "Private product — live demo available on request.",
     content: (
       <div>
         <p>
@@ -58,13 +59,17 @@ export const products = [
     images: [FynnexaLogo],
     stack: ["Next.js", "NestJS", "Microservices", "AWS", "Supabase"],
     slug: "fynnexa",
+    demoNote: "Private product — live demo available on request.",
     content: (
       <div>
         <p>
-          Fynnexa is an investment platform that streamlines deal management,
-          investor onboarding, and regulatory compliance. It connects investors
-          with curated private deals while providing robust KYC verification,
-          document signing, and portfolio tracking tools.
+          I contributed to both the NestJS microservices backend and the Next.js
+          frontend for Fynnexa, an investment platform that streamlines deal
+          management, investor onboarding, and regulatory compliance.
+        </p>
+        <p>
+          Fynnexa connects investors with curated private deals while providing
+          robust KYC verification, document signing, and portfolio tracking tools.
         </p>
         <p>
           The backend is a NestJS microservices monorepo with 10 independent
@@ -94,33 +99,20 @@ export const products = [
       "A software house offering cutting-edge design and development services, tailored solutions, and a seamless client experience. From web and mobile applications to emerging technologies like AI and AR, Xecutors redefines excellence.",
     thumbnail: Xecutors,
     images: [Xecutors, Xecutorstwo],
-    stack: ["Nextjs", "Tailwindcss"],
+    stack: ["Next.js", "Tailwind CSS"],
     slug: "xecutors",
     content: (
       <div>
         <p>
-          Xecutors is a full-scale software house specializing in exceptional
-          design and development services. With a strong focus on quality, the
-          team delivers tailored solutions for clients, ranging from custom
-          software to advanced web and mobile applications.
+          While at Xecutors, I contributed to the company website built with
+          Next.js and Tailwind CSS — refining UI components, improving page
+          performance, and collaborating with the design team on responsive layouts.
         </p>
         <p>
-          Key features include transparent pricing models, an in-house expert
-          team, and services in emerging technologies such as Artificial
-          Intelligence (AI), Internet of Things (IoT), and Augmented Reality
-          (AR). Xecutors also emphasizes streamlined processes and
-          confidentiality assurance to help businesses thrive.
-        </p>
-        <p>
-          I had the opportunity to contribute to some parts of this website,
-          adding my expertise to enhance its functionality and design. While not
-          fully created by me, my work played a significant role in refining
-          certain aspects.
-        </p>
-        <p>
-          Whether you&apos;re a startup or scaling enterprise, Xecutors ensures
-          that your digital vision is executed flawlessly, providing unmatched
-          support and innovative solutions.
+          My work focused on implementing frontend sections of the marketing site,
+          optimizing load times, and ensuring consistent styling across key landing
+          pages. The full site is a team effort; I owned specific pages and
+          component-level improvements.
         </p>
       </div>
     ),
@@ -132,27 +124,20 @@ export const products = [
       "An automated traveling portal where agencies can automate tasks like ticket invoice generation, email messaging, HR system management, and social media integration. Create modern websites with a single click.",
     thumbnail: gogencyThumbnail,
     images: [gogencyImage1, gogencyImage2],
-    stack: ["Nextjs", "Tailwindcss", "ShadCn UI"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "ShadCN UI"],
     slug: "gogency",
     content: (
       <div>
         <p>
-          Gogency is an innovative platform designed for travel agencies to
-          automate their day-to-day operations. It offers features such as
-          automatic ticket invoice generation, email auto-messaging, and a fully
-          automated HR system.
+          I built frontend features for Gogency at Xecutors — an automated travel
+          agency platform with ticket invoicing, email automation, HR management,
+          and one-click website generation for agency clients.
         </p>
         <p>
-          Additionally, Gogency provides the ability to create modern,
-          fully-functional websites in just one click. It also integrates social
-          media management tools directly from the platform, allowing users to
-          manage social media posts and updates seamlessly.
-        </p>
-        <p>
-          The platform streamlines multiple processes for travel agencies,
-          making it easier to manage tasks and improve overall efficiency. With
-          Gogency, agencies can focus more on their business while the platform
-          handles the operational workload.
+          Using Next.js, TypeScript, Tailwind CSS, and ShadCN UI, I implemented
+          responsive dashboard views and agency-facing workflows. The platform
+          integrates social media management tools and streamlines day-to-day
+          operations so agencies can focus on clients instead of manual tasks.
         </p>
       </div>
     ),
@@ -194,7 +179,7 @@ export const products = [
     href: "https://www.silktravels.co.uk/",
     title: "Silk Travels",
     description:
-      "A front-end travel website built within Xecutors office using Gogency&apos;s template system. Features flight booking, inquiry management, and consultant portal with CRUD operations, invoice generation, and multiple API integrations.",
+      "A front-end travel website built at Xecutors using Gogency's template system. Features flight booking, inquiry management, and consultant portal with CRUD operations, invoice generation, and multiple API integrations.",
     thumbnail: SilkTravelsThumbnail, // Make sure to import this
     images: [SilkTravelsImage1, SilkTravelsImage2], // Import these images
     stack: ["React", "Tailwind CSS", "Multiple APIs"],

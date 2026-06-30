@@ -1,84 +1,39 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
+import { Badge } from "./Badge";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconMail,
+} from "@tabler/icons-react";
+import { TbBrandWhatsapp } from "react-icons/tb";
 
-const defaultFormState = {
-  name: {
-    value: "",
-    error: "",
-  },
-  email: {
-    value: "",
-    error: "",
-  },
-  message: {
-    value: "",
-    error: "",
-  },
-};
 export const Contact = () => {
-  const [formData, setFormData] = useState(defaultFormState);
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Write your submit logic here
-  };
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <div className="flex flex-col md:flex-row justify-between gap-5">
-        <input
-          type="text"
-          placeholder="Your Name"
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-          value={formData.name.value}
-          onChange={(e) => {
-            setFormData({
-              ...formData,
-              name: {
-                value: e.target.value,
-                error: "",
-              },
-            });
-          }}
-        />
-        <input
-          type="email"
-          placeholder="Your email address"
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
-          value={formData.email.value}
-          onChange={(e) => {
-            setFormData({
-              ...formData,
-              email: {
-                value: e.target.value,
-                error: "",
-              },
-            });
-          }}
-        />
-      </div>
-      <div>
-        <textarea
-          placeholder="Your Message"
-          rows={10}
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
-          value={formData.message.value}
-          onChange={(e) => {
-            setFormData({
-              ...formData,
-              message: {
-                value: e.target.value,
-                error: "",
-              },
-            });
-          }}
-        />
-      </div>
-      <button
-        className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500"
-        type="submit"
-      >
-        Submit{" "}
-      </button>
-    </form>
+    <div className="flex flex-wrap gap-3 max-w-xl">
+      <Badge
+        href="mailto:samarhayat.dev@gmail.com"
+        text="samarhayat.dev@gmail.com"
+        icon={<IconMail className="h-4 w-4" />}
+        showArrow={false}
+      />
+      <Badge
+        href="https://www.linkedin.com/in/thesamarhayatt"
+        text="LinkedIn"
+        icon={<IconBrandLinkedin className="h-4 w-4" />}
+        showArrow={false}
+      />
+      <Badge
+        href="https://github.com/thesamarhayat"
+        text="GitHub"
+        icon={<IconBrandGithub className="h-4 w-4" />}
+        showArrow={false}
+      />
+      <Badge
+        href="https://wa.me/923495129992"
+        text="WhatsApp"
+        icon={<TbBrandWhatsapp className="h-4 w-4" />}
+        showArrow={false}
+      />
+    </div>
   );
 };
