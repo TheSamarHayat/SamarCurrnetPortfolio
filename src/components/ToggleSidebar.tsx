@@ -1,16 +1,20 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
+import {
+  IconDownload,
+  IconLayoutSidebarRightCollapse,
+} from "@tabler/icons-react";
 import { Badge } from "./Badge";
 
 import { isMobile } from "@/lib/utils";
 
 import { SidebarHeader } from "./SidebarHeader";
 import { Navigation } from "./Navigation";
+import { SidebarAtAGlance } from "./SidebarAtAGlance";
 
 export const ToggleSidebar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setOpen(!isMobile());
@@ -25,14 +29,28 @@ export const ToggleSidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="px-6 z-[100] py-10 bg-gradient-to-b from-neutral-50 to-neutral-100 border-r border-neutral-200/70 w-[17rem] max-w-[17rem] lg:w-[17rem] fixed lg:relative h-screen left-0 flex flex-col justify-between"
+            className="px-6 z-[100] py-10 bg-gradient-to-b from-neutral-50 to-neutral-100 border-r border-neutral-200/70 w-[17rem] max-w-[17rem] lg:w-[17rem] fixed lg:relative h-screen left-0 flex flex-col"
           >
-            <div className="flex-1 overflow-auto">
+            <div className="min-h-0 flex-1 overflow-y-auto">
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/resume" text="Read Resume" />
+            <div
+              className="shrink-0 space-y-3 border-t border-neutral-200/80 pt-5 mt-4"
+              onClick={() => isMobile() && setOpen(false)}
+            >
+              <SidebarAtAGlance />
+              <div className="flex flex-col gap-2">
+                <Badge href="/resume" text="Read Resume" />
+                <a
+                  href="/resume/samar_hayat_resume.pdf"
+                  download
+                  className="flex items-center justify-center gap-2 rounded-full border border-neutral-200/80 bg-white/70 px-4 py-2 text-xs font-semibold text-secondary transition hover:bg-white hover:text-primary"
+                >
+                  <IconDownload className="h-3.5 w-3.5" />
+                  Download PDF
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
