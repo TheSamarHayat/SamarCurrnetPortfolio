@@ -1,3 +1,4 @@
+import { Badge } from "@/components/Badge";
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
@@ -5,7 +6,6 @@ import { NotAProBut } from "@/components/NotAProBut";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
-import { ViewTransitionLink as Link } from "@/components/ViewTransitionLink";
 import { IconMail } from "@tabler/icons-react";
 
 export default function Home() {
@@ -32,14 +32,14 @@ export default function Home() {
         focused on creating responsive, SEO-optimized interfaces that improve user
         experience.
       </Paragraph>
-      <Link
-        href={"mailto:samarhayat.dev@gmail.com"}
-        className="inline-flex mt-4 items-center gap-1 group/button rounded-full focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 origin-left
-        group-hover/button:bg-gray-50/15 group-hover/button:scale-105 hover:scale-105"
-      >
-        <IconMail />
-        Hire Me
-      </Link>
+      <div className="mt-4">
+        <Badge
+          href="mailto:samarhayat.dev@gmail.com"
+          text="Hire Me"
+          icon={<IconMail className="h-4 w-4" />}
+          showArrow={false}
+        />
+      </div>
       <Heading
         as="h2"
         className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
