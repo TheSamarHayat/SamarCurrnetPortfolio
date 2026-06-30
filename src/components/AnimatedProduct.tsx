@@ -28,7 +28,7 @@ export const AnimatedProduct = ({
     >
       <Link
         href={product.slug ? `/projects/${product.slug}` : product.href}
-        key={product.href}
+        key={product.slug ?? product.href}
         className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 py-4"
       >
         <div className="h-full flex items-center justify-center">
