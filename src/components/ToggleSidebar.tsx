@@ -25,7 +25,7 @@ export const ToggleSidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="px-6 z-[100] py-10 bg-neutral-100 max-w-[14rem] lg:w-fit fixed lg:relative h-screen left-0 flex flex-col justify-between"
+            className="px-6 z-[100] py-10 bg-gradient-to-b from-neutral-50 to-neutral-100 border-r border-neutral-200/70 w-[17rem] max-w-[17rem] lg:w-[17rem] fixed lg:relative h-screen left-0 flex flex-col justify-between"
           >
             <div className="flex-1 overflow-auto">
               <SidebarHeader />
