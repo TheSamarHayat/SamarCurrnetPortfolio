@@ -33,7 +33,7 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="WngP93RQqWAa6aTf0uJvLP2UyYJ8SacTK6EUsv8h4lA"
+          content="l5NqhwRDNgrT2-HvjO5hSCFZAVMFzNtPAVcxkNFUuqI"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.thesamarhayat.com/" />
